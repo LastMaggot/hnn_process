@@ -33,8 +33,9 @@
 @explanation: 解释original的内容<br>
 [@changes: 对代码内容的修改]<br>
 
-##修改示例：
-''''
+## 修改示例
+
+<pre><code>
 @method: trans_bin
     @description: 把词向量文件从文本格式转换为二进制格式的bin文件，使用gensim中的KeyedVectors来处理词向量
     @package: embddings_process.py
@@ -55,6 +56,10 @@
             @code: 使用 'r' 只读模式读取路径文件 'embed_path'
         @original: 如果每次都用上面的方法加载，速度非常慢，可以将词向量文件保存成bin文件，以后就加载bin文件，速度会变快
             @explanation: 应该是一个"{优化建议}"，解释为什么将词向量文件保存为二进制（bin）文件。
+</code>
+</pre>
+下面是源代码
+<pre><code>
 def trans_bin(path1, path2):
     wv_from_text = KeyedVectors.load_word2vec_format(path1, binary=False)
     # 如果每次都用上面的方法加载，速度非常慢，可以将词向量文件保存成bin文件，以后就加载bin文件，速度会变快
@@ -62,4 +67,5 @@ def trans_bin(path1, path2):
     wv_from_text.save(path2)
 
     return
-''''
+</code>
+</pre>
