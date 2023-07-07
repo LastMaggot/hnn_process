@@ -6,7 +6,7 @@
 有一项目，hnn_process，其中的代码不符合规范，难以读懂，请你通过修改以增加代码的可读性。
 
 ## 文件树结构
-
+下面的内容也是我进行修改过的代码文件<br>
 .<br>
 │  .gitattributes<br>
 │  embddings_process.py<br>
