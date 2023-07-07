@@ -21,17 +21,19 @@
 为原有代码进行了一部分修改，并且对诸多难以理解功能的函数新增了注释。
 
 注释规范如下：
-
-@method: 表示要注释的方法<br>
-@description: 方法功能的描述<br>
-[@reference: 方法引用的库内容]<br>
-[@package: 方法所在文件名]<br>
-@param: 方法的形式参数描述<br>
-@return: 方法的返回值描述<br>
-@analysis: 对原有代码的注释、方法变量、业务逻辑等内容的分析。<br>
-@original: 描述原有内容<br>
-@explanation: 解释original的内容<br>
-[@changes: 对代码内容的修改]<br>
+<pre>
+@method: 表示要注释的方法
+    @description: 方法功能的描述
+    [@reference: 方法引用的库内容]
+    [@package: 方法所在文件名]
+    @param: 方法的形式参数描述
+    @return: 方法的返回值描述<br>
+    @analysis: 对原有代码的注释、方法变量、业务逻辑等内容的分析。
+    @original: 描述原有内容
+    @explanation: 解释original的内容
+    [@changes: 对代码内容的修改]
+</pre>
+注意，“[]”的内容表示可选项，有部分函数我没有给出。
 
 ## 修改示例
 
